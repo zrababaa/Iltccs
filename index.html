@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thermolab Industries – TLI | Laboratory Manufacturing, Calibration, Validation & CPD Training | Jordan</title>
+  <meta name="description" content="Thermolab Industries provides laboratory equipment manufacturing, calibration services, testing & validation, CPD training, and technical consulting for laboratories in Jordan." />
+  <meta name="keywords" content="calibration services Jordan, laboratory equipment Jordan, biosafety cabinet Jordan, CPD training medical laboratories, ISO/IEC 17025 consulting Jordan, fume hood testing, cold room mapping, balance calibration Jordan" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── HEADER ─────────────────────────────────────────────────────────── -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <img src="logo.png" alt="Thermolab Industries" class="logo__img" />
+        <span class="logo__sub-tag">TLI · ILTCCS</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home"         class="nav__link" data-en="Home"           data-ar="الرئيسية">Home</a>
+        <a href="#services"     class="nav__link" data-en="Services"       data-ar="خدماتنا">Services</a>
+        <a href="#cpd"          class="nav__link" data-en="CPD Training"   data-ar="التدريب">CPD Training</a>
+        <a href="#videos"       class="nav__link" data-en="Videos"         data-ar="فيديوهات">Videos</a>
+        <a href="#manufacturing"class="nav__link" data-en="Manufacturing"  data-ar="التصنيع">Manufacturing</a>
+        <a href="#about"        class="nav__link" data-en="About"          data-ar="من نحن">About</a>
+        <a href="#contact"      class="nav__link" data-en="Contact"        data-ar="تواصل">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-toggle__en">AR</span>
+          <span class="lang-toggle__ar" style="display:none">EN</span>
+        </button>
+        <a href="https://wa.me/962790021143" target="_blank" class="btn btn--whatsapp" aria-label="WhatsApp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.521 5.824L.057 23.18a.75.75 0 00.914.914l5.356-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          <span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span>
+        </a>
+        <a href="#contact" class="btn btn--primary" data-en="Get a Quote" data-ar="طلب عرض سعر">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── HERO ───────────────────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__particles" id="particles"></div>
+    <div class="container hero__inner">
+      <div class="hero__badge">
+        <span class="badge-dot"></span>
+        <span data-en="ISO/IEC 17025 Aware · CPD Certified Training · 30+ Years Experience"
+              data-ar="وعي ISO/IEC 17025 · تدريب CPD معتمد · أكثر من 30 عامًا من الخبرة">
+          ISO/IEC 17025 Aware · CPD Certified Training · 30+ Years Experience
+        </span>
+      </div>
+      <h1 class="hero__title">
+        <span data-en="Laboratory Manufacturing,<br/><span class='gradient-text'>Calibration, Validation</span><br/>&amp; CPD Training"
+              data-ar="تصنيع المختبرات،<br/><span class='gradient-text'>المعايرة، التحقق</span><br/>والتدريب المهني المستمر">
+          Laboratory Manufacturing,<br/><span class="gradient-text">Calibration, Validation</span><br/>&amp; CPD Training
+        </span>
+      </h1>
+      <p class="hero__subtitle"
+         data-en="Thermolab Industries provides practical laboratory solutions for medical, research, industrial, and quality-control laboratories through equipment manufacturing, calibration support, validation, testing, CPD training, and technical consulting."
+         data-ar="تقدم ثيرمولاب إندستريز حلولاً مختبرية عملية للمختبرات الطبية والبحثية والصناعية من خلال تصنيع المعدات، ودعم المعايرة، والتحقق، والاختبار، والتدريب المهني، والاستشارات التقنية.">
+        Thermolab Industries provides practical laboratory solutions for medical, research, industrial, and quality-control laboratories through equipment manufacturing, calibration support, validation, testing, CPD training, and technical consulting.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6M9 16h6M17 21H7a2 2 0 01-2-2V5a2 2 0 012-2h7l5 5v11a2 2 0 01-2 2z"/></svg>
+          <span data-en="Request a Quotation" data-ar="طلب عرض سعر">Request a Quotation</span>
+        </a>
+        <a href="#cpd" class="btn btn--accent btn--lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <span data-en="Register for CPD Training" data-ar="التسجيل في التدريب المهني">Register for CPD Training</span>
+        </a>
+        <a href="https://wa.me/962790021143" target="_blank" class="btn btn--ghost btn--lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.521 5.824L.057 23.18a.75.75 0 00.914.914l5.356-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          <span data-en="Contact on WhatsApp" data-ar="تواصل عبر واتساب">Contact on WhatsApp</span>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num" data-target="30">0</span><span class="stat__plus">+</span>
+          <span class="stat__label" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="6">0</span>
+          <span class="stat__label" data-en="Service Domains" data-ar="مجالات الخدمة">Service Domains</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="100">0</span><span class="stat__plus">+</span>
+          <span class="stat__label" data-en="Laboratories Served" data-ar="مختبرات تخدمها">Laboratories Served</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="12">0</span>
+          <span class="stat__label" data-en="CPD Modules" data-ar="وحدات التدريب">CPD Modules</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="scroll-indicator">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TRUST BAR ─────────────────────────────────────────────────────── -->
+  <section class="trust-bar">
+    <div class="container trust-bar__inner">
+      <span class="trust-bar__label" data-en="Serving:" data-ar="نخدم:">Serving:</span>
+      <div class="trust-bar__items">
+        <span data-en="Medical Laboratories"    data-ar="المختبرات الطبية">Medical Laboratories</span>
+        <span data-en="Hospital Labs"           data-ar="مختبرات المستشفيات">Hospital Labs</span>
+        <span data-en="Universities"            data-ar="الجامعات">Universities</span>
+        <span data-en="Research Centers"        data-ar="مراكز البحث">Research Centers</span>
+        <span data-en="Pharmaceutical Labs"     data-ar="المختبرات الصيدلانية">Pharmaceutical Labs</span>
+        <span data-en="Food Testing Labs"       data-ar="مختبرات تحليل الأغذية">Food Testing Labs</span>
+        <span data-en="Industrial Laboratories" data-ar="المختبرات الصناعية">Industrial Laboratories</span>
+        <span data-en="Government Labs"         data-ar="المختبرات الحكومية">Government Labs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ──────────────────────────────────────────────────────── -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="What We Do" data-ar="ما نقدمه">What We Do</span>
+        <h2 class="section-title" data-en="Complete Laboratory Solutions" data-ar="حلول مختبرية متكاملة">Complete Laboratory Solutions</h2>
+        <p class="section-subtitle" data-en="From manufacturing to calibration, validation to training — we cover every technical need your laboratory has." data-ar="من التصنيع إلى المعايرة، ومن التحقق إلى التدريب — نغطي كل احتياجاتك التقنية.">From manufacturing to calibration, validation to training — we cover every technical need your laboratory has.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card service-card--featured" data-reveal>
+          <div class="service-card__icon service-card__icon--blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="service-card__priority" data-en="Priority Service" data-ar="خدمة أساسية">Priority Service</div>
+          <h3 class="service-card__title" data-en="CPD Training" data-ar="التدريب المهني المستمر">CPD Training</h3>
+          <p class="service-card__desc" data-en="Certified Professional Development training for laboratory professionals — including biosafety cabinets, calibration awareness, ISO/IEC 17025, and measurement uncertainty." data-ar="تدريب مهني معتمد لمختصي المختبرات يشمل خزائن السلامة البيولوجية والمعايرة وISO/IEC 17025 وعدم اليقين في القياس.">Certified Professional Development training for laboratory professionals — including biosafety cabinets, calibration awareness, ISO/IEC 17025, and measurement uncertainty.</p>
+          <ul class="service-card__list">
+            <li data-en="Biosafety Cabinet Safe Operation" data-ar="تشغيل خزانة السلامة البيولوجية">Biosafety Cabinet Safe Operation</li>
+            <li data-en="ISO/IEC 17025 Awareness" data-ar="الوعي بـ ISO/IEC 17025">ISO/IEC 17025 Awareness</li>
+            <li data-en="Measurement Uncertainty" data-ar="عدم اليقين في القياس">Measurement Uncertainty</li>
+            <li data-en="Laboratory Safety" data-ar="سلامة المختبر">Laboratory Safety</li>
+            <li data-en="Equipment Qualification" data-ar="تأهيل المعدات">Equipment Qualification</li>
+          </ul>
+          <a href="#cpd" class="service-card__link" data-en="Explore CPD Training →" data-ar="استعرض التدريب المهني ←">Explore CPD Training →</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon service-card__icon--teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg>
+          </div>
+          <h3 class="service-card__title" data-en="Calibration Services" data-ar="خدمات المعايرة">Calibration Services</h3>
+          <p class="service-card__desc" data-en="Professional calibration according to ISO/IEC 17025 principles with traceable certificates and uncertainty evaluation." data-ar="معايرة احترافية وفق مبادئ ISO/IEC 17025 مع شهادات قابلة للتتبع وتقييم عدم اليقين.">Professional calibration according to ISO/IEC 17025 principles with traceable certificates and uncertainty evaluation.</p>
+          <ul class="service-card__list">
+            <li data-en="Balance &amp; Mass Calibration" data-ar="معايرة الميزان والكتلة">Balance &amp; Mass Calibration</li>
+            <li data-en="Temperature Calibration" data-ar="معايرة درجة الحرارة">Temperature Calibration</li>
+            <li data-en="Pressure Gauge Calibration" data-ar="معايرة مقاييس الضغط">Pressure Gauge Calibration</li>
+            <li data-en="Humidity Calibration" data-ar="معايرة الرطوبة">Humidity Calibration</li>
+            <li data-en="Air Velocity Calibration" data-ar="معايرة سرعة الهواء">Air Velocity Calibration</li>
+          </ul>
+          <a href="#calibration" class="service-card__link" data-en="View Calibration Services →" data-ar="عرض خدمات المعايرة ←">View Calibration Services →</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon service-card__icon--indigo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3 class="service-card__title" data-en="Testing &amp; Validation" data-ar="الاختبار والتحقق">Testing &amp; Validation</h3>
+          <p class="service-card__desc" data-en="Comprehensive testing and validation for laboratory equipment ensuring safety, compliance, and reliable performance." data-ar="اختبار وتحقق شامل لمعدات المختبر لضمان السلامة والامتثال والأداء الموثوق.">Comprehensive testing and validation for laboratory equipment ensuring safety, compliance, and reliable performance.</p>
+          <ul class="service-card__list">
+            <li data-en="Biosafety Cabinet Testing" data-ar="اختبار خزانة السلامة البيولوجية">Biosafety Cabinet Testing</li>
+            <li data-en="HEPA Filter Integrity" data-ar="سلامة فلتر HEPA">HEPA Filter Integrity</li>
+            <li data-en="Cold Room &amp; Freezer Mapping" data-ar="رسم خرائط الغرف الباردة والفريزرات">Cold Room &amp; Freezer Mapping</li>
+            <li data-en="Fume Hood Face Velocity" data-ar="سرعة وجه خزانة الأبخرة">Fume Hood Face Velocity</li>
+            <li data-en="Particle Count Evaluation" data-ar="تقييم عدد الجسيمات">Particle Count Evaluation</li>
+          </ul>
+          <a href="#validation" class="service-card__link" data-en="View Testing Services →" data-ar="عرض خدمات الاختبار ←">View Testing Services →</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon service-card__icon--orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="service-card__title" data-en="Laboratory Equipment Manufacturing" data-ar="تصنيع معدات المختبرات">Laboratory Equipment Manufacturing</h3>
+          <p class="service-card__desc" data-en="Custom-designed and manufactured laboratory equipment combining engineering precision with safety compliance." data-ar="معدات مختبرات مصممة ومصنوعة مخصصة تجمع بين الدقة الهندسية وامتثال السلامة.">Custom-designed and manufactured laboratory equipment combining engineering precision with safety compliance.</p>
+          <ul class="service-card__list">
+            <li data-en="Biological Safety Cabinets Class II A2" data-ar="خزائن السلامة البيولوجية الفئة II A2">Biological Safety Cabinets Class II A2</li>
+            <li data-en="Laboratory Refrigerators" data-ar="ثلاجات المختبر">Laboratory Refrigerators</li>
+            <li data-en="Stainless Steel Lab Equipment" data-ar="معدات مختبر من الفولاذ المقاوم للصدأ">Stainless Steel Lab Equipment</li>
+            <li data-en="Fume Hood Rehabilitation" data-ar="تأهيل خزانات الأبخرة">Fume Hood Rehabilitation</li>
+            <li data-en="Custom Technical Solutions" data-ar="حلول تقنية مخصصة">Custom Technical Solutions</li>
+          </ul>
+          <a href="#manufacturing" class="service-card__link" data-en="View Manufacturing →" data-ar="عرض التصنيع ←">View Manufacturing →</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon service-card__icon--green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="service-card__title" data-en="Technical Consulting" data-ar="الاستشارات التقنية">Technical Consulting</h3>
+          <p class="service-card__desc" data-en="Expert technical guidance for laboratories seeking compliance, system development, and quality improvement." data-ar="إرشاد تقني متخصص للمختبرات الساعية إلى الامتثال وتطوير الأنظمة وتحسين الجودة.">Expert technical guidance for laboratories seeking compliance, system development, and quality improvement.</p>
+          <ul class="service-card__list">
+            <li data-en="ISO/IEC 17025 Documentation" data-ar="توثيق ISO/IEC 17025">ISO/IEC 17025 Documentation</li>
+            <li data-en="Calibration System Development" data-ar="تطوير نظام المعايرة">Calibration System Development</li>
+            <li data-en="Laboratory Workflow Improvement" data-ar="تحسين سير عمل المختبر">Laboratory Workflow Improvement</li>
+            <li data-en="Risk &amp; Opportunity Assessment" data-ar="تقييم المخاطر والفرص">Risk &amp; Opportunity Assessment</li>
+            <li data-en="Training Program Development" data-ar="تطوير برامج التدريب">Training Program Development</li>
+          </ul>
+          <a href="#consulting" class="service-card__link" data-en="View Consulting →" data-ar="عرض الاستشارات ←">View Consulting →</a>
+        </div>
+
+        <div class="service-card service-card--cta" data-reveal>
+          <div class="service-card__cta-inner">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="service-card__cta-icon"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <h3 data-en="Need a Custom Solution?" data-ar="هل تحتاج حلًا مخصصًا؟">Need a Custom Solution?</h3>
+            <p data-en="Our team of experts can design tailored laboratory solutions that fit your specific technical requirements." data-ar="يمكن لفريق خبرائنا تصميم حلول مختبرية مخصصة تناسب متطلباتك التقنية.">Our team of experts can design tailored laboratory solutions that fit your specific technical requirements.</p>
+            <a href="#contact" class="btn btn--primary" data-en="Talk to Our Experts" data-ar="تحدث مع خبرائنا">Talk to Our Experts</a>
+            <a href="https://wa.me/962790021143" target="_blank" class="btn btn--whatsapp-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.521 5.824L.057 23.18a.75.75 0 00.914.914l5.356-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              <span data-en="WhatsApp Us" data-ar="راسلنا على واتساب">WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CPD TRAINING ──────────────────────────────────────────────────── -->
+  <section class="section cpd" id="cpd">
+    <div class="container">
+      <div class="cpd__inner">
+        <div class="cpd__content" data-reveal>
+          <span class="section-tag section-tag--light" data-en="CPD Training" data-ar="التدريب المهني المستمر">CPD Training</span>
+          <h2 class="section-title section-title--light" data-en="Certified Professional Development Training" data-ar="تدريب مهني مستمر معتمد">Certified Professional Development Training</h2>
+          <p class="cpd__desc" data-en="Our CPD training programs are designed for laboratory professionals who need certified, practical, and internationally recognized training. Led by Eng. Mahmoud Hammoudeh with 30+ years of hands-on experience." data-ar="تم تصميم برامج التدريب المهني لدينا للمختصين الذين يحتاجون تدريباً معتمداً وعملياً. بإشراف المهندس محمود حمودة ذو الخبرة العملية التي تمتد لأكثر من 30 عامًا.">Our CPD training programs are designed for laboratory professionals who need certified, practical, and internationally recognized training. Led by Eng. Mahmoud Hammoudeh with 30+ years of hands-on experience.</p>
+
+          <div class="cpd__featured">
+            <div class="cpd__featured-badge" data-en="Featured Course" data-ar="الدورة المميزة">Featured Course</div>
+            <h3 data-en="Certification &amp; Safe Operation of Class II A2 Biosafety Cabinets" data-ar="شهادة وتشغيل خزائن السلامة البيولوجية الفئة II A2 بأمان">Certification &amp; Safe Operation of<br/>Class II A2 Biosafety Cabinets</h3>
+            <p data-en="Comprehensive training on biosafety cabinet principles, safe operation, maintenance, and certification requirements for laboratory professionals." data-ar="تدريب شامل على مبادئ خزانة السلامة البيولوجية والتشغيل الآمن والصيانة ومتطلبات الاعتماد.">Comprehensive training on biosafety cabinet principles, safe operation, maintenance, and certification requirements for laboratory professionals.</p>
+          </div>
+
+          <div class="cpd__modules">
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Biosafety Cabinet Safe Operation &amp; Maintenance" data-ar="تشغيل وصيانة خزانة السلامة البيولوجية">Biosafety Cabinet Safe Operation &amp; Maintenance</span></div>
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Laboratory Safety Principles" data-ar="مبادئ سلامة المختبر">Laboratory Safety Principles</span></div>
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Calibration Awareness &amp; Traceability" data-ar="الوعي بالمعايرة والتتبع">Calibration Awareness &amp; Traceability</span></div>
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Measurement Uncertainty Evaluation" data-ar="تقييم عدم اليقين في القياس">Measurement Uncertainty Evaluation</span></div>
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="ISO/IEC 17025 Awareness" data-ar="الوعي بـ ISO/IEC 17025">ISO/IEC 17025 Awareness</span></div>
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Equipment Qualification &amp; Validation" data-ar="تأهيل وتحقق المعدات">Equipment Qualification &amp; Validation</span></div>
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Laboratory Quality Control" data-ar="ضبط جودة المختبر">Laboratory Quality Control</span></div>
+            <div class="cpd__module"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Equipment Operation &amp; Maintenance" data-ar="تشغيل وصيانة المعدات">Equipment Operation &amp; Maintenance</span></div>
+          </div>
+
+          <div class="cpd__actions">
+            <a href="#contact" class="btn btn--accent btn--lg" data-en="Register for CPD Training" data-ar="التسجيل في التدريب المهني">Register for CPD Training</a>
+            <a href="https://wa.me/962790021143" target="_blank" class="btn btn--ghost-light btn--lg" data-en="Ask About Upcoming Sessions" data-ar="اسأل عن الجلسات القادمة">Ask About Upcoming Sessions</a>
+          </div>
+        </div>
+
+        <div class="cpd__visual" data-reveal>
+          <div class="cpd__card-stack">
+            <div class="cpd__cert-card">
+              <div class="cpd__cert-header">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                <span data-en="CPD Certificate" data-ar="شهادة التدريب المهني">CPD Certificate</span>
+              </div>
+              <div class="cpd__cert-body">
+                <div class="cpd__cert-line"></div>
+                <div class="cpd__cert-line cpd__cert-line--short"></div>
+                <div class="cpd__cert-line cpd__cert-line--xs"></div>
+              </div>
+              <div class="cpd__cert-seal"><div class="cpd__cert-seal-inner">TLI</div></div>
+            </div>
+            <div class="cpd__info-card">
+              <div class="cpd__info-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span data-en="Flexible scheduling" data-ar="جدول زمني مرن">Flexible scheduling</span></div>
+              <div class="cpd__info-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg><span data-en="Small group &amp; on-site sessions" data-ar="جلسات مجموعات صغيرة وموقعية">Small group &amp; on-site sessions</span></div>
+              <div class="cpd__info-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg><span data-en="Internationally recognized CPD credits" data-ar="ساعات تدريب معتمدة دولياً">Internationally recognized CPD credits</span></div>
+              <div class="cpd__info-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span data-en="Arabic &amp; English delivery" data-ar="التدريس بالعربية والإنجليزية">Arabic &amp; English delivery</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VIDEO SECTION ─────────────────────────────────────────────────── -->
+  <section class="section videos" id="videos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="See Us In Action" data-ar="شاهدنا في العمل">See Us In Action</span>
+        <h2 class="section-title" data-en="Thermolab Industries – Our Work" data-ar="ثيرمولاب إندستريز – أعمالنا">Thermolab Industries – Our Work</h2>
+        <p class="section-subtitle" data-en="Watch Eng. Mahmoud Hammoudeh demonstrate our laboratory equipment manufacturing capabilities and technical expertise." data-ar="شاهد المهندس محمود حمودة يعرض قدراتنا في تصنيع معدات المختبرات وخبرتنا التقنية.">Watch Eng. Mahmoud Hammoudeh demonstrate our laboratory equipment manufacturing capabilities and technical expertise.</p>
+      </div>
+      <div class="videos__grid">
+        <div class="video-card" data-reveal>
+          <div class="video-card__thumb" data-video="_qI-RwxE9hk">
+            <img src="https://img.youtube.com/vi/_qI-RwxE9hk/maxresdefault.jpg"
+                 onerror="this.src='https://img.youtube.com/vi/_qI-RwxE9hk/hqdefault.jpg'"
+                 alt="Thermolab Industries – Laboratory Equipment Manufacturing" loading="lazy" />
+            <button class="video-card__play" aria-label="Play video">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <div class="video-card__info">
+            <h3 data-en="Laboratory Equipment Manufacturing" data-ar="تصنيع معدات المختبرات">Laboratory Equipment Manufacturing</h3>
+            <p data-en="See our manufacturing process for laboratory equipment including biosafety cabinets and custom solutions." data-ar="شاهد عملية التصنيع لدينا للمعدات المختبرية بما في ذلك خزائن السلامة البيولوجية والحلول المخصصة.">See our manufacturing process for laboratory equipment including biosafety cabinets and custom solutions.</p>
+            <a href="https://www.youtube.com/watch?v=_qI-RwxE9hk" target="_blank" class="video-card__link" data-en="Watch on YouTube →" data-ar="شاهد على يوتيوب ←">Watch on YouTube →</a>
+          </div>
+        </div>
+
+        <div class="video-card" data-reveal>
+          <div class="video-card__thumb" data-video="0NN-yBGypHY">
+            <img src="https://img.youtube.com/vi/0NN-yBGypHY/maxresdefault.jpg"
+                 onerror="this.src='https://img.youtube.com/vi/0NN-yBGypHY/hqdefault.jpg'"
+                 alt="Thermolab Industries – Technical Services" loading="lazy" />
+            <button class="video-card__play" aria-label="Play video">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <div class="video-card__info">
+            <h3 data-en="Technical Services &amp; Expertise" data-ar="الخدمات التقنية والخبرات">Technical Services &amp; Expertise</h3>
+            <p data-en="Discover our calibration, testing, validation, and technical consulting capabilities for laboratory environments." data-ar="اكتشف قدراتنا في المعايرة والاختبار والتحقق والاستشارات التقنية للمختبرات.">Discover our calibration, testing, validation, and technical consulting capabilities for laboratory environments.</p>
+            <a href="https://www.youtube.com/watch?v=0NN-yBGypHY" target="_blank" class="video-card__link" data-en="Watch on YouTube →" data-ar="شاهد على يوتيوب ←">Watch on YouTube →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VIDEO LIGHTBOX ─────────────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__inner">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="lightbox__video">
+        <iframe id="lightboxIframe" src="" allow="autoplay; encrypted-media" allowfullscreen title="Video"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── CALIBRATION ───────────────────────────────────────────────────── -->
+  <section class="section calibration" id="calibration">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Calibration Services" data-ar="خدمات المعايرة">Calibration Services</span>
+        <h2 class="section-title" data-en="Traceable, Reliable, Certified Calibration" data-ar="معايرة موثوقة وموثقة ومعتمدة">Traceable, Reliable, Certified Calibration</h2>
+        <p class="section-subtitle" data-en="Our calibration services are built on ISO/IEC 17025 principles, providing measurement confidence and full traceability." data-ar="تستند خدمات المعايرة لدينا إلى مبادئ ISO/IEC 17025 مما يوفر ثقة قياسية وتتبعاً كاملاً.">Our calibration services are built on ISO/IEC 17025 principles, providing measurement confidence and full traceability.</p>
+      </div>
+      <div class="calibration__grid">
+        <div class="cal-item" data-reveal><div class="cal-item__icon">⚖️</div><h4 data-en="Balance &amp; Mass" data-ar="الميزان والكتلة">Balance &amp; Mass</h4><p data-en="Precision calibration of analytical and top-loading balances with full uncertainty evaluation and traceable certificates." data-ar="معايرة دقيقة للموازين التحليلية مع تقييم عدم اليقين وشهادات قابلة للتتبع.">Precision calibration of analytical and top-loading balances with full uncertainty evaluation and traceable certificates.</p></div>
+        <div class="cal-item" data-reveal><div class="cal-item__icon">🌡️</div><h4 data-en="Temperature" data-ar="درجة الحرارة">Temperature</h4><p data-en="Temperature calibration for ovens, incubators, refrigerators, freezers, and measurement instruments." data-ar="معايرة درجة الحرارة للأفران والحاضنات والثلاجات والأجهزة القياسية.">Temperature calibration for ovens, incubators, refrigerators, freezers, and measurement instruments.</p></div>
+        <div class="cal-item" data-reveal><div class="cal-item__icon">💧</div><h4 data-en="Humidity" data-ar="الرطوبة">Humidity</h4><p data-en="Hygrometer and humidity sensor calibration with combined temperature and relative humidity assessment." data-ar="معايرة أجهزة الرطوبة مع تقييم درجة الحرارة والرطوبة النسبية المشتركة.">Hygrometer and humidity sensor calibration with combined temperature and relative humidity assessment.</p></div>
+        <div class="cal-item" data-reveal><div class="cal-item__icon">🔧</div><h4 data-en="Pressure" data-ar="الضغط">Pressure</h4><p data-en="Pressure gauge calibration covering wide measurement ranges with documented traceability chains." data-ar="معايرة مقاييس الضغط لنطاقات قياسية واسعة مع سلاسل تتبع موثقة.">Pressure gauge calibration covering wide measurement ranges with documented traceability chains.</p></div>
+        <div class="cal-item" data-reveal><div class="cal-item__icon">💨</div><h4 data-en="Air Velocity" data-ar="سرعة الهواء">Air Velocity</h4><p data-en="Air velocity measurement calibration for fume hoods, biosafety cabinets, and HVAC applications." data-ar="معايرة قياس سرعة الهواء لخزانات الأبخرة وخزائن السلامة البيولوجية وتطبيقات HVAC.">Air velocity measurement calibration for fume hoods, biosafety cabinets, and HVAC applications.</p></div>
+        <div class="cal-item" data-reveal><div class="cal-item__icon">📋</div><h4 data-en="Calibration Records" data-ar="سجلات المعايرة">Calibration Records</h4><p data-en="Full documentation including calibration certificates, uncertainty statements, and traceability records." data-ar="توثيق كامل يشمل شهادات المعايرة وبيانات عدم اليقين وسجلات التتبع.">Full documentation including calibration certificates, uncertainty statements, and traceability records.</p></div>
+      </div>
+      <div class="calibration__features">
+        <div class="cal-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="ISO/IEC 17025 Based Approach" data-ar="نهج قائم على ISO/IEC 17025">ISO/IEC 17025 Based Approach</span></div>
+        <div class="cal-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Full Measurement Traceability" data-ar="تتبع كامل للقياسات">Full Measurement Traceability</span></div>
+        <div class="cal-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Uncertainty Evaluation Included" data-ar="تقييم عدم اليقين مدرج">Uncertainty Evaluation Included</span></div>
+        <div class="cal-feature"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="On-Site Calibration Available" data-ar="المعايرة الميدانية متاحة">On-Site Calibration Available</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MANUFACTURING ─────────────────────────────────────────────────── -->
+  <section class="section manufacturing" id="manufacturing">
+    <div class="container">
+      <div class="manufacturing__inner">
+        <div class="manufacturing__content" data-reveal>
+          <span class="section-tag" data-en="Manufacturing" data-ar="التصنيع">Manufacturing</span>
+          <h2 class="section-title" data-en="Laboratory Equipment We Build" data-ar="معدات المختبرات التي نصنعها">Laboratory Equipment We Build</h2>
+          <p data-en="We don't just sell equipment — we understand the technical operation, safety requirements, calibration needs, testing requirements, and maintenance needs of every product we manufacture." data-ar="نحن لا نبيع المعدات فحسب — بل نفهم التشغيل التقني ومتطلبات السلامة واحتياجات المعايرة والاختبار والصيانة لكل منتج نصنعه.">We don't just sell equipment — we understand the technical operation, safety requirements, calibration needs, testing requirements, and maintenance needs of every product we manufacture.</p>
+          <div class="mfg__products">
+            <div class="mfg__product"><div class="mfg__product-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><path d="M8 3v6M16 3v6"/></svg></div><div><strong data-en="Biological Safety Cabinets Class II A2" data-ar="خزائن السلامة البيولوجية الفئة II A2">Biological Safety Cabinets Class II A2</strong><p data-en="Full NSF 49 compliant biosafety cabinets with HEPA filtration systems" data-ar="خزائن سلامة بيولوجية متوافقة مع NSF 49 مع أنظمة ترشيح HEPA">Full NSF 49 compliant biosafety cabinets with HEPA filtration systems</p></div></div>
+            <div class="mfg__product"><div class="mfg__product-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10M12 7v10"/></svg></div><div><strong data-en="Laboratory Refrigerators &amp; Freezers" data-ar="ثلاجات وفريزرات المختبر">Laboratory Refrigerators &amp; Freezers</strong><p data-en="Precision temperature-controlled storage for biological and pharmaceutical samples" data-ar="تخزين بدرجة حرارة محكومة بدقة للعينات البيولوجية والصيدلانية">Precision temperature-controlled storage for biological and pharmaceutical samples</p></div></div>
+            <div class="mfg__product"><div class="mfg__product-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div><strong data-en="Stainless Steel Laboratory Equipment" data-ar="معدات مختبر من الفولاذ المقاوم للصدأ">Stainless Steel Laboratory Equipment</strong><p data-en="Custom benches, shelving, cabinets, and containment systems" data-ar="طاولات ورفوف وخزائن وأنظمة احتواء مخصصة">Custom benches, shelving, cabinets, and containment systems</p></div></div>
+            <div class="mfg__product"><div class="mfg__product-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div><strong data-en="Fume Hood Rehabilitation" data-ar="تأهيل خزانات الأبخرة">Fume Hood Rehabilitation</strong><p data-en="Professional rehabilitation, upgrade, and technical service for chemical fume hoods" data-ar="تأهيل وترقية وخدمة تقنية احترافية لخزانات الأبخرة الكيميائية">Professional rehabilitation, upgrade, and technical service for chemical fume hoods</p></div></div>
+            <div class="mfg__product"><div class="mfg__product-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><div><strong data-en="Emergency Shower &amp; Eyewash" data-ar="دش الطوارئ وغسيل العيون">Emergency Shower &amp; Eyewash</strong><p data-en="Safety equipment maintenance and certification for laboratory emergency systems" data-ar="صيانة وتوثيق معدات السلامة لأنظمة طوارئ المختبر">Safety equipment maintenance and certification for laboratory emergency systems</p></div></div>
+            <div class="mfg__product"><div class="mfg__product-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><div><strong data-en="Customized Technical Solutions" data-ar="حلول تقنية مخصصة">Customized Technical Solutions</strong><p data-en="Bespoke laboratory systems designed and built to your specific requirements" data-ar="أنظمة مختبرية مصممة ومبنية وفق متطلباتك الخاصة">Bespoke laboratory systems designed and built to your specific requirements</p></div></div>
+          </div>
+        </div>
+        <div class="manufacturing__visual" data-reveal>
+          <div class="mfg__showcase">
+            <div class="mfg__showcase-main">
+              <div class="mfg__showcase-icon"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><path d="M8 3v6M16 3v6"/><circle cx="12" cy="15" r="2"/></svg></div>
+              <div class="mfg__showcase-label" data-en="Class II A2<br/>Biosafety Cabinet" data-ar="الفئة II A2<br/>خزانة السلامة البيولوجية">Class II A2<br/>Biosafety Cabinet</div>
+            </div>
+            <div class="mfg__badges">
+              <div class="mfg__badge">NSF 49</div>
+              <div class="mfg__badge">ISO/IEC 17025</div>
+              <div class="mfg__badge">HEPA Filtered</div>
+              <div class="mfg__badge">CE Aware</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary btn--lg mfg__cta" data-en="Request Equipment Quote" data-ar="طلب عرض سعر للمعدات">Request Equipment Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VALIDATION ───────────────────────────────────────────────────── -->
+  <section class="section validation" id="validation">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Testing &amp; Validation" data-ar="الاختبار والتحقق">Testing &amp; Validation</span>
+        <h2 class="section-title" data-en="Ensure Safety, Compliance &amp; Performance" data-ar="ضمان السلامة والامتثال والأداء">Ensure Safety, Compliance &amp; Performance</h2>
+        <p class="section-subtitle" data-en="Comprehensive testing and validation services for laboratory equipment ensuring every instrument performs to specification." data-ar="خدمات اختبار وتحقق شاملة لمعدات المختبر لضمان أداء كل جهاز وفق المواصفات.">Comprehensive testing and validation services for laboratory equipment ensuring every instrument performs to specification.</p>
+      </div>
+      <div class="validation__grid">
+        <div class="val-card" data-reveal><h4 data-en="Biosafety Cabinet Services" data-ar="خدمات خزانة السلامة البيولوجية">Biosafety Cabinet Services</h4><ul><li data-en="Downflow velocity testing" data-ar="اختبار سرعة التدفق الهابط">Downflow velocity testing</li><li data-en="Inflow velocity testing" data-ar="اختبار سرعة التدفق الداخل">Inflow velocity testing</li><li data-en="HEPA filter integrity testing" data-ar="اختبار سلامة فلتر HEPA">HEPA filter integrity testing</li><li data-en="Particle count evaluation" data-ar="تقييم عدد الجسيمات">Particle count evaluation</li><li data-en="Cabinet certification awareness" data-ar="الوعي بشهادة الخزانة">Cabinet certification awareness</li></ul></div>
+        <div class="val-card" data-reveal><h4 data-en="Fume Hood Services" data-ar="خدمات خزانة الأبخرة">Fume Hood Services</h4><ul><li data-en="Face velocity testing" data-ar="اختبار سرعة الوجه">Face velocity testing</li><li data-en="Airflow pattern evaluation" data-ar="تقييم نمط تدفق الهواء">Airflow pattern evaluation</li><li data-en="Containment assessment" data-ar="تقييم الاحتواء">Containment assessment</li><li data-en="Hood performance verification" data-ar="التحقق من أداء الخزانة">Hood performance verification</li><li data-en="Safety compliance check" data-ar="فحص الامتثال للسلامة">Safety compliance check</li></ul></div>
+        <div class="val-card" data-reveal><h4 data-en="Cold Chain &amp; Storage Mapping" data-ar="رسم خرائط التبريد والتخزين">Cold Chain &amp; Storage Mapping</h4><ul><li data-en="Cold room temperature mapping" data-ar="رسم خريطة درجة حرارة الغرفة الباردة">Cold room temperature mapping</li><li data-en="Freezer mapping" data-ar="رسم خريطة الفريزر">Freezer mapping</li><li data-en="Ultra-low freezer mapping" data-ar="رسم خريطة الفريزر فائق التبريد">Ultra-low freezer mapping</li><li data-en="Temperature uniformity studies" data-ar="دراسات التوحيد الحراري">Temperature uniformity studies</li><li data-en="Monitoring system verification" data-ar="التحقق من نظام المراقبة">Monitoring system verification</li></ul></div>
+        <div class="val-card" data-reveal><h4 data-en="Equipment Qualification" data-ar="تأهيل المعدات">Equipment Qualification</h4><ul><li data-en="IQ / OQ / PQ protocols" data-ar="بروتوكولات IQ/OQ/PQ">IQ / OQ / PQ protocols</li><li data-en="Performance verification" data-ar="التحقق من الأداء">Performance verification</li><li data-en="Temperature &amp; humidity monitoring" data-ar="مراقبة درجة الحرارة والرطوبة">Temperature &amp; humidity monitoring</li><li data-en="Equipment requalification" data-ar="إعادة تأهيل المعدات">Equipment requalification</li><li data-en="Compliance documentation" data-ar="توثيق الامتثال">Compliance documentation</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY CHOOSE ────────────────────────────────────────────────────── -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Why Choose TLI" data-ar="لماذا تختار TLI">Why Choose TLI</span>
+        <h2 class="section-title" data-en="The TLI Difference" data-ar="ما يميز TLI">The TLI Difference</h2>
+        <p class="section-subtitle" data-en="We combine manufacturing expertise with deep technical knowledge — no other company in Jordan offers this complete, integrated laboratory service." data-ar="نجمع خبرة التصنيع مع المعرفة التقنية العميقة — لا توجد شركة أخرى في الأردن تقدم هذه الخدمة المتكاملة.">We combine manufacturing expertise with deep technical knowledge — no other company in Jordan offers this complete, integrated laboratory service.</p>
+      </div>
+      <div class="why-us__grid">
+        <div class="why-card" data-reveal><div class="why-card__num">01</div><h4 data-en="Manufacturing + Services" data-ar="التصنيع + الخدمات">Manufacturing + Services</h4><p data-en="We manufacture the equipment AND provide calibration, testing, and training for it — a unique combination that gives us deeper understanding than any service-only company." data-ar="نصنع المعدات ونقدم المعايرة والاختبار والتدريب لها — تركيبة فريدة تمنحنا فهمًا أعمق من أي شركة خدمات فقط.">We manufacture the equipment AND provide calibration, testing, and training for it — a unique combination that gives us deeper understanding than any service-only company.</p></div>
+        <div class="why-card" data-reveal><div class="why-card__num">02</div><h4 data-en="30+ Years Practical Experience" data-ar="أكثر من 30 عامًا من الخبرة العملية">30+ Years Practical Experience</h4><p data-en="Eng. Mahmoud Hammoudeh brings over three decades of hands-on laboratory engineering experience to every project and training session." data-ar="يجلب المهندس محمود حمودة أكثر من ثلاثة عقود من الخبرة العملية لكل مشروع وجلسة تدريب.">Eng. Mahmoud Hammoudeh brings over three decades of hands-on laboratory engineering experience to every project and training session.</p></div>
+        <div class="why-card" data-reveal><div class="why-card__num">03</div><h4 data-en="ISO/IEC 17025 Awareness" data-ar="الوعي بـ ISO/IEC 17025">ISO/IEC 17025 Awareness</h4><p data-en="All our services are designed with ISO/IEC 17025 requirements in mind, helping your laboratory maintain compliance and quality standards." data-ar="جميع خدماتنا مصممة مع مراعاة متطلبات ISO/IEC 17025 لمساعدة مختبرك في الحفاظ على الامتثال ومعايير الجودة.">All our services are designed with ISO/IEC 17025 requirements in mind, helping your laboratory maintain compliance and quality standards.</p></div>
+        <div class="why-card" data-reveal><div class="why-card__num">04</div><h4 data-en="International Network" data-ar="شبكة دولية">International Network</h4><p data-en="Connected to the Royal Academy of Engineering's Leaders in Innovation Fellowship and international technical communities through ILTCCS." data-ar="مرتبطون بزمالة قادة الابتكار في الأكاديمية الملكية للهندسة والمجتمعات التقنية الدولية عبر ILTCCS.">Connected to the Royal Academy of Engineering's Leaders in Innovation Fellowship and international technical communities through ILTCCS.</p></div>
+        <div class="why-card" data-reveal><div class="why-card__num">05</div><h4 data-en="Custom Solutions" data-ar="حلول مخصصة">Custom Solutions</h4><p data-en="We don't offer off-the-shelf packages. Every solution is designed for your specific laboratory, equipment, and compliance needs." data-ar="لا نقدم حزمًا جاهزة. كل حل مصمم لمختبرك ومعداتك واحتياجات امتثالك الخاصة.">We don't offer off-the-shelf packages. Every solution is designed for your specific laboratory, equipment, and compliance needs.</p></div>
+        <div class="why-card" data-reveal><div class="why-card__num">06</div><h4 data-en="After-Sales Support" data-ar="دعم ما بعد البيع">After-Sales Support</h4><p data-en="Our relationship doesn't end at delivery. We provide ongoing technical support, maintenance, and recalibration for everything we supply." data-ar="لا تنتهي علاقتنا عند التسليم. نقدم دعمًا تقنيًا مستمرًا وصيانةً وإعادة معايرة لكل ما نورّده.">Our relationship doesn't end at delivery. We provide ongoing technical support, maintenance, and recalibration for everything we supply.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOUNDER ───────────────────────────────────────────────────────── -->
+  <section class="section founder" id="about">
+    <div class="container">
+      <div class="founder__inner">
+        <div class="founder__visual" data-reveal>
+          <div class="founder__photo-wrap">
+            <img src="founder.jpg" alt="Eng. Mahmoud A. Hammoudeh – Founder of Thermolab Industries" class="founder__photo" />
+          </div>
+          <div class="founder__name-card">
+            <strong data-en="Eng. Mahmoud A. Hammoudeh" data-ar="م. محمود أ. حمودة">Eng. Mahmoud A. Hammoudeh</strong>
+            <span data-en="Founder &amp; Technical Director" data-ar="المؤسس والمدير التقني">Founder &amp; Technical Director</span>
+            <span>Thermolab Industries · ILTCCS</span>
+          </div>
+          <div class="founder__links">
+            <a href="mailto:info@iltccs.com" class="founder__link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@iltccs.com</a>
+            <a href="https://wa.me/962790021143" target="_blank" class="founder__link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.521 5.824L.057 23.18a.75.75 0 00.914.914l5.356-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>+962 790 021 143</a>
+          </div>
+        </div>
+
+        <div class="founder__content" data-reveal>
+          <span class="section-tag" data-en="Founder Profile" data-ar="ملف المؤسس">Founder Profile</span>
+          <h2 class="section-title" data-en="Technical Leadership with 30+ Years of Experience" data-ar="قيادة تقنية بأكثر من 30 عامًا من الخبرة">Technical Leadership with 30+ Years of Experience</h2>
+          <p class="founder__bio" data-en="Eng. Mahmoud A. Hammoudeh is the founder and technical director of Thermolab Industries. With over 30 years of practical experience in laboratory equipment, technical services, manufacturing, calibration, and innovation, he is one of Jordan's most experienced laboratory engineering professionals." data-ar="المهندس محمود أ. حمودة هو مؤسس ومدير ثيرمولاب إندستريز التقني. بخبرة تمتد لأكثر من 30 عامًا في معدات المختبرات والخدمات التقنية والتصنيع والمعايرة والابتكار، يُعدّ أحد أكثر المهندسين المختبريين خبرةً في الأردن.">Eng. Mahmoud A. Hammoudeh is the founder and technical director of Thermolab Industries. With over 30 years of practical experience in laboratory equipment, technical services, manufacturing, calibration, and innovation, he is one of Jordan's most experienced laboratory engineering professionals.</p>
+
+          <div class="founder__expertise">
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Laboratory equipment manufacturing and engineering" data-ar="تصنيع وهندسة معدات المختبرات">Laboratory equipment manufacturing and engineering</span></div>
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Calibration and metrology awareness" data-ar="الوعي بالمعايرة والمترولوجيا">Calibration and metrology awareness</span></div>
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Laboratory testing and validation" data-ar="اختبار وتحقق المختبرات">Laboratory testing and validation</span></div>
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="ISO/IEC 17025 implementation support" data-ar="دعم تطبيق ISO/IEC 17025">ISO/IEC 17025 implementation support</span></div>
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Biosafety cabinet and fume hood services" data-ar="خدمات خزانة السلامة البيولوجية وخزانة الأبخرة">Biosafety cabinet and fume hood services</span></div>
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Innovation and entrepreneurship" data-ar="الابتكار وريادة الأعمال">Innovation and entrepreneurship</span></div>
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Training and technical mentoring" data-ar="التدريب والإرشاد التقني">Training and technical mentoring</span></div>
+            <div class="expertise-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg><span data-en="Royal Academy of Engineering — Leaders in Innovation Fellowship" data-ar="الأكاديمية الملكية للهندسة — زمالة قادة الابتكار">Royal Academy of Engineering — Leaders in Innovation Fellowship</span></div>
+          </div>
+
+          <div class="founder__rae">
+            <div class="founder__rae-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-en="Royal Academy of Engineering" data-ar="الأكاديمية الملكية للهندسة">Royal Academy of Engineering</span></div>
+            <p data-en="Leaders in Innovation Fellowship (LIF) Participant — part of an international network driving technical innovation and entrepreneurship." data-ar="مشارك في زمالة قادة الابتكار (LIF) — ضمن شبكة دولية تقود الابتكار التقني وريادة الأعمال.">Leaders in Innovation Fellowship (LIF) Participant — part of an international network driving technical innovation and entrepreneurship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONSULTING ────────────────────────────────────────────────────── -->
+  <section class="section consulting" id="consulting">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Technical Consulting" data-ar="الاستشارات التقنية">Technical Consulting</span>
+        <h2 class="section-title" data-en="Expert Guidance for Laboratory Excellence" data-ar="إرشاد متخصص لتميّز المختبرات">Expert Guidance for Laboratory Excellence</h2>
+        <p class="section-subtitle" data-en="Whether you're building a new laboratory, seeking accreditation, or improving your technical systems — our consulting team provides the roadmap." data-ar="سواء كنت تبني مختبرًا جديدًا أو تسعى للاعتماد أو تحسين أنظمتك التقنية — يوفر فريق استشاراتنا خارطة الطريق.">Whether you're building a new laboratory, seeking accreditation, or improving your technical systems — our consulting team provides the roadmap.</p>
+      </div>
+      <div class="consulting__grid">
+        <div class="consult-item" data-reveal><div class="consult-item__icon">📄</div><h4 data-en="ISO/IEC 17025 Documentation" data-ar="توثيق ISO/IEC 17025">ISO/IEC 17025 Documentation</h4><p data-en="Complete documentation support for laboratory quality management systems, procedures, and technical records." data-ar="دعم توثيق كامل لأنظمة إدارة جودة المختبر والإجراءات والسجلات التقنية.">Complete documentation support for laboratory quality management systems, procedures, and technical records.</p></div>
+        <div class="consult-item" data-reveal><div class="consult-item__icon">🔬</div><h4 data-en="Calibration System Development" data-ar="تطوير نظام المعايرة">Calibration System Development</h4><p data-en="Build or improve your internal calibration system with proper procedures, records, and traceability chains." data-ar="بناء أو تحسين نظام المعايرة الداخلي مع إجراءات وسجلات وسلاسل تتبع مناسبة.">Build or improve your internal calibration system with proper procedures, records, and traceability chains.</p></div>
+        <div class="consult-item" data-reveal><div class="consult-item__icon">📊</div><h4 data-en="Testing Method Development" data-ar="تطوير طرق الاختبار">Testing Method Development</h4><p data-en="Develop, validate, and document testing methods that meet international standards and customer requirements." data-ar="تطوير وتحقق وتوثيق طرق الاختبار التي تلبي المعايير الدولية ومتطلبات العملاء.">Develop, validate, and document testing methods that meet international standards and customer requirements.</p></div>
+        <div class="consult-item" data-reveal><div class="consult-item__icon">⚡</div><h4 data-en="Laboratory Workflow Improvement" data-ar="تحسين سير عمل المختبر">Laboratory Workflow Improvement</h4><p data-en="Analyze and optimize laboratory workflows to increase efficiency, reduce errors, and improve throughput." data-ar="تحليل وتحسين سير عمل المختبر لزيادة الكفاءة وتقليل الأخطاء وتحسين الإنتاجية.">Analyze and optimize laboratory workflows to increase efficiency, reduce errors, and improve throughput.</p></div>
+        <div class="consult-item" data-reveal><div class="consult-item__icon">🛡️</div><h4 data-en="Risk &amp; Opportunity Assessment" data-ar="تقييم المخاطر والفرص">Risk &amp; Opportunity Assessment</h4><p data-en="Systematic identification and management of laboratory risks with practical mitigation strategies." data-ar="تحديد وإدارة منهجية لمخاطر المختبر مع استراتيجيات تخفيف عملية.">Systematic identification and management of laboratory risks with practical mitigation strategies.</p></div>
+        <div class="consult-item" data-reveal><div class="consult-item__icon">🎯</div><h4 data-en="Training Program Development" data-ar="تطوير برامج التدريب">Training Program Development</h4><p data-en="Custom training programs designed for your team, equipment, and quality objectives." data-ar="برامج تدريب مخصصة مصممة لفريقك ومعداتك وأهداف الجودة الخاصة بك.">Custom training programs designed for your team, equipment, and quality objectives.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</span>
+        <h2 class="section-title" data-en="Start Your Laboratory Improvement Today" data-ar="ابدأ تحسين مختبرك اليوم">Start Your Laboratory Improvement Today</h2>
+        <p class="section-subtitle" data-en="Whether you need a quotation, want to register for CPD training, or have a technical question — we're here to help." data-ar="سواء احتجت عرض سعر أو التسجيل في التدريب المهني أو لديك سؤال تقني — نحن هنا للمساعدة.">Whether you need a quotation, want to register for CPD training, or have a technical question — we're here to help.</p>
+      </div>
+      <div class="contact__inner">
+        <div class="contact__info" data-reveal>
+          <div class="contact__card">
+            <div class="contact__method"><div class="contact__method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12.07 19.79 19.79 0 01.19 3.42 2 2 0 012.18 1.23h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 9.14a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div><div><strong data-en="Phone &amp; WhatsApp" data-ar="الهاتف وواتساب">Phone &amp; WhatsApp</strong><a href="tel:+962790021143">+962 790 021 143</a></div></div>
+            <div class="contact__method"><div class="contact__method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><strong data-en="Email" data-ar="البريد الإلكتروني">Email</strong><a href="mailto:info@iltccs.com">info@iltccs.com</a></div></div>
+            <div class="contact__method"><div class="contact__method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><strong data-en="Location" data-ar="الموقع">Location</strong><span data-en="Amman, Jordan" data-ar="عمّان، الأردن">Amman, Jordan</span></div></div>
+            <div class="contact__method"><div class="contact__method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div><div><strong data-en="Website" data-ar="الموقع الإلكتروني">Website</strong><a href="https://www.iltccs.com" target="_blank">www.iltccs.com</a></div></div>
+          </div>
+          <a href="https://wa.me/962790021143" target="_blank" class="contact__whatsapp-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.521 5.824L.057 23.18a.75.75 0 00.914.914l5.356-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            <span data-en="Chat on WhatsApp Now" data-ar="تحدث معنا عبر واتساب الآن">Chat on WhatsApp Now</span>
+          </a>
+        </div>
+
+        <div class="contact__form-wrap" data-reveal>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-en="Full Name *" data-ar="الاسم الكامل *">Full Name *</label>
+                <input type="text" id="name" name="name" data-placeholder-en="Your full name" data-placeholder-ar="اسمك الكامل" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="org" data-en="Organization" data-ar="المؤسسة">Organization</label>
+                <input type="text" id="org" name="org" data-placeholder-en="Hospital / Lab / University" data-placeholder-ar="مستشفى / مختبر / جامعة" placeholder="Hospital / Lab / University" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" data-en="Email Address *" data-ar="البريد الإلكتروني *">Email Address *</label>
+                <input type="email" id="email" name="email" data-placeholder-en="your@email.com" data-placeholder-ar="بريدك@الإلكتروني.com" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone" data-en="Phone / WhatsApp" data-ar="الهاتف / واتساب">Phone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" placeholder="+962 XX XXXX XXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service" data-en="Service Needed *" data-ar="الخدمة المطلوبة *">Service Needed *</label>
+              <select id="service" name="service" required>
+                <option value="" data-en="Select a service..." data-ar="اختر خدمة...">Select a service...</option>
+                <option data-en="CPD Training Registration" data-ar="التسجيل في التدريب المهني">CPD Training Registration</option>
+                <option data-en="Calibration Services" data-ar="خدمات المعايرة">Calibration Services</option>
+                <option data-en="Testing &amp; Validation" data-ar="الاختبار والتحقق">Testing &amp; Validation</option>
+                <option data-en="Laboratory Equipment Manufacturing" data-ar="تصنيع معدات المختبرات">Laboratory Equipment Manufacturing</option>
+                <option data-en="Technical Consulting" data-ar="الاستشارات التقنية">Technical Consulting</option>
+                <option data-en="Biosafety Cabinet Service" data-ar="خدمة خزانة السلامة البيولوجية">Biosafety Cabinet Service</option>
+                <option data-en="ISO/IEC 17025 Support" data-ar="دعم ISO/IEC 17025">ISO/IEC 17025 Support</option>
+                <option data-en="General Inquiry" data-ar="استفسار عام">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-en="Message *" data-ar="الرسالة *">Message *</label>
+              <textarea id="message" name="message" rows="4" data-placeholder-en="Describe your laboratory, equipment, or training needs..." data-placeholder-ar="صِف احتياجاتك للمختبر أو المعدات أو التدريب..." placeholder="Describe your laboratory, equipment, or training needs..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
+            </button>
+            <p class="form-note" data-en="We respond within 24 hours. For urgent queries, use WhatsApp above." data-ar="نستجيب خلال 24 ساعة. للاستفسارات العاجلة، استخدم واتساب أعلاه.">We respond within 24 hours. For urgent queries, use WhatsApp above.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="logo footer__logo">
+            <img src="logo.png" alt="Thermolab Industries" class="logo__img logo__img--sm" />
+            <span class="logo__sub-tag logo__sub-tag--footer">TLI · ILTCCS</span>
+          </a>
+          <p class="footer__tagline" data-en="Reliable laboratory solutions through manufacturing, calibration, validation, and training." data-ar="حلول مختبرية موثوقة من خلال التصنيع والمعايرة والتحقق والتدريب.">Reliable laboratory solutions through manufacturing, calibration, validation, and training.</p>
+          <div class="footer__contact-quick">
+            <a href="tel:+962790021143">+962 790 021 143</a>
+            <a href="mailto:info@iltccs.com">info@iltccs.com</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h5 data-en="Services" data-ar="الخدمات">Services</h5>
+            <a href="#cpd"           data-en="CPD Training"              data-ar="التدريب المهني">CPD Training</a>
+            <a href="#calibration"   data-en="Calibration Services"      data-ar="خدمات المعايرة">Calibration Services</a>
+            <a href="#validation"    data-en="Testing &amp; Validation"  data-ar="الاختبار والتحقق">Testing &amp; Validation</a>
+            <a href="#manufacturing" data-en="Manufacturing"             data-ar="التصنيع">Manufacturing</a>
+            <a href="#consulting"    data-en="Technical Consulting"      data-ar="الاستشارات التقنية">Technical Consulting</a>
+          </div>
+          <div class="footer__col">
+            <h5 data-en="Company" data-ar="الشركة">Company</h5>
+            <a href="#about"   data-en="About TLI"       data-ar="من نحن">About TLI</a>
+            <a href="#about"   data-en="Founder Profile"  data-ar="ملف المؤسس">Founder Profile</a>
+            <a href="#videos"  data-en="Videos"           data-ar="فيديوهات">Videos</a>
+            <a href="#contact" data-en="Contact Us"       data-ar="تواصل معنا">Contact Us</a>
+          </div>
+          <div class="footer__col">
+            <h5 data-en="Sectors We Serve" data-ar="القطاعات التي نخدمها">Sectors We Serve</h5>
+            <span data-en="Medical Laboratories"    data-ar="المختبرات الطبية">Medical Laboratories</span>
+            <span data-en="Hospital Labs"           data-ar="مختبرات المستشفيات">Hospital Labs</span>
+            <span data-en="Universities &amp; Research" data-ar="الجامعات والبحث">Universities &amp; Research</span>
+            <span data-en="Pharmaceutical Labs"     data-ar="المختبرات الصيدلانية">Pharmaceutical Labs</span>
+            <span data-en="Industrial Laboratories" data-ar="المختبرات الصناعية">Industrial Laboratories</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-en="© 2024 Thermolab Industries – TLI. All rights reserved. | International LIF Technical Community Services (ILTCCS) | Amman, Jordan" data-ar="© 2024 ثيرمولاب إندستريز – TLI. جميع الحقوق محفوظة. | خدمات المجتمع التقني الدولي LIF (ILTCCS) | عمّان، الأردن">© 2024 Thermolab Industries – TLI. All rights reserved. | International LIF Technical Community Services (ILTCCS) | Amman, Jordan</p>
+        <div class="footer__seo">
+          <span>Calibration Services Jordan</span>
+          <span>Laboratory Equipment Jordan</span>
+          <span>Biosafety Cabinet Jordan</span>
+          <span>CPD Training Medical Laboratories</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── FLOATING WHATSAPP ─────────────────────────────────────────────── -->
+  <a href="https://wa.me/962790021143" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.116.553 4.103 1.521 5.824L.057 23.18a.75.75 0 00.914.914l5.356-1.464A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+    <span class="whatsapp-float__tooltip" data-en="Chat with us!" data-ar="تحدث معنا!">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
