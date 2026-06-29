@@ -31,6 +31,7 @@
         <a href="#manufacturing"class="nav__link" data-en="Manufacturing"  data-ar="التصنيع">Manufacturing</a>
         <a href="#about"        class="nav__link" data-en="About"          data-ar="من نحن">About</a>
         <a href="#team"         class="nav__link" data-en="Team"           data-ar="الفريق">Team</a>
+        <a href="#presentation" class="nav__link" data-en="Presentation"   data-ar="العرض">Presentation</a>
         <a href="#contact"      class="nav__link" data-en="Contact"        data-ar="تواصل">Contact</a>
       </nav>
 
@@ -688,6 +689,67 @@
       </div>
     </div>
   </section>
+
+  <!-- ─── PRESENTATION ────────────────────────────────────────────────────── -->
+  <section class="section presentation" id="presentation">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="ILTCCS Pitch Deck" data-ar="عرض ILTCCS التقديمي">ILTCCS Pitch Deck</span>
+        <h2 class="section-title" data-en="Our Presentation" data-ar="عرضنا التقديمي">Our Presentation</h2>
+        <p class="section-subtitle" data-en="Click any slide to view the full presentation. Navigate with arrows or keyboard." data-ar="انقر على أي شريحة لعرض العرض التقديمي الكامل. تنقّل بالأسهم أو لوحة المفاتيح.">Click any slide to view the full presentation. Navigate with arrows or keyboard.</p>
+      </div>
+
+      <div class="slides-grid" id="slidesGrid">
+        <div class="slide-thumb" data-slide="1" data-reveal><img src="slides/slide-01.webp" alt="Slide 1" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="2" data-reveal><img src="slides/slide-02.webp" alt="Slide 2" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="3" data-reveal><img src="slides/slide-03.webp" alt="Slide 3" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="4" data-reveal><img src="slides/slide-04.webp" alt="Slide 4" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="5" data-reveal><img src="slides/slide-05.webp" alt="Slide 5" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="6" data-reveal><img src="slides/slide-06.webp" alt="Slide 6" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="7" data-reveal><img src="slides/slide-07.webp" alt="Slide 7" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="8" data-reveal><img src="slides/slide-08.webp" alt="Slide 8" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="9" data-reveal><img src="slides/slide-09.webp" alt="Slide 9" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="10" data-reveal><img src="slides/slide-10.webp" alt="Slide 10" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="11" data-reveal><img src="slides/slide-11.webp" alt="Slide 11" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="12" data-reveal><img src="slides/slide-12.webp" alt="Slide 12" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="13" data-reveal><img src="slides/slide-13.webp" alt="Slide 13" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="14" data-reveal><img src="slides/slide-14.webp" alt="Slide 14" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="15" data-reveal><img src="slides/slide-15.webp" alt="Slide 15" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="16" data-reveal><img src="slides/slide-16.webp" alt="Slide 16" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="17" data-reveal><img src="slides/slide-17.webp" alt="Slide 17" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="18" data-reveal><img src="slides/slide-18.webp" alt="Slide 18" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="19" data-reveal><img src="slides/slide-19.webp" alt="Slide 19" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="20" data-reveal><img src="slides/slide-20.webp" alt="Slide 20" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="21" data-reveal><img src="slides/slide-21.webp" alt="Slide 21" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="22" data-reveal><img src="slides/slide-22.webp" alt="Slide 22" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="23" data-reveal><img src="slides/slide-23.webp" alt="Slide 23" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="24" data-reveal><img src="slides/slide-24.webp" alt="Slide 24" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="25" data-reveal><img src="slides/slide-25.webp" alt="Slide 25" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="26" data-reveal><img src="slides/slide-26.webp" alt="Slide 26" loading="lazy" /></div>
+        <div class="slide-thumb" data-slide="27" data-reveal><img src="slides/slide-27.webp" alt="Slide 27" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SLIDE VIEWER POPUP ───────────────────────────────────────────────── -->
+  <div class="slide-viewer" id="slideViewer" role="dialog" aria-modal="true" aria-label="Presentation viewer">
+    <div class="slide-viewer__backdrop" id="slideViewerBackdrop"></div>
+    <div class="slide-viewer__inner">
+      <button class="slide-viewer__close" id="slideViewerClose" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="slide-viewer__nav slide-viewer__nav--prev" id="slidePrev" aria-label="Previous slide">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="slide-viewer__stage">
+        <img class="slide-viewer__img" id="slideViewerImg" src="" alt="Slide" />
+      </div>
+      <button class="slide-viewer__nav slide-viewer__nav--next" id="slideNext" aria-label="Next slide">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div class="slide-viewer__counter" id="slideCounter">1 / 27</div>
+    </div>
+  </div>
 
   <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
   <footer class="footer">

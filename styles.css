@@ -1584,6 +1584,167 @@ input, select, textarea { font-family: inherit; }
   .team-card__initials { font-size: 1.9rem; }
 }
 
+/* ─── PRESENTATION ───────────────────────────────────────────────────────── */
+.presentation { background: var(--gray-50); }
+
+.slides-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+.slide-thumb {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--gray-200);
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+  transition: transform .22s ease, box-shadow .22s ease;
+  outline: 2px solid transparent;
+}
+.slide-thumb:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0,0,0,.18);
+  outline-color: var(--teal);
+  z-index: 1;
+}
+.slide-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+.slide-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(15,23,42,.0);
+  transition: background .22s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-thumb:hover::after {
+  background: rgba(15,23,42,.12);
+}
+
+/* ─── SLIDE VIEWER POPUP ─────────────────────────────────────────────────── */
+.slide-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 9500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+.slide-viewer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.slide-viewer__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 10, 20, .92);
+  backdrop-filter: blur(8px);
+}
+.slide-viewer__inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px;
+  gap: 0;
+}
+.slide-viewer__stage {
+  position: relative;
+  max-width: min(90vw, 1200px);
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.slide-viewer__img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.7);
+  display: block;
+  transition: opacity .2s ease;
+  object-fit: contain;
+}
+.slide-viewer__nav {
+  position: relative;
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+  margin: 0 16px;
+}
+.slide-viewer__nav:hover {
+  background: rgba(255,255,255,.25);
+  border-color: rgba(255,255,255,.6);
+  transform: scale(1.08);
+}
+.slide-viewer__close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,.3);
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .18s ease, transform .18s ease;
+}
+.slide-viewer__close:hover {
+  background: rgba(255,60,60,.5);
+  transform: scale(1.1);
+}
+.slide-viewer__counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.7);
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  background: rgba(0,0,0,.35);
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1100px) {
+  .slides-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 800px) {
+  .slides-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .slide-viewer__inner { padding: 50px 14px; }
+  .slide-viewer__nav { width: 40px; height: 40px; margin: 0 8px; }
+}
+@media (max-width: 500px) {
+  .slides-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+}
+
 /* ─── FLOATING WHATSAPP ──────────────────────────────────────────────────── */
 .whatsapp-float {
   position: fixed;

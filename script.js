@@ -240,6 +240,82 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+/* ─── PRESENTATION SLIDE VIEWER ─────────────────────────────────────────── */
+(function initSlideViewer() {
+  const TOTAL = 27;
+  const viewer = document.getElementById('slideViewer');
+  const viewerImg = document.getElementById('slideViewerImg');
+  const viewerClose = document.getElementById('slideViewerClose');
+  const viewerBackdrop = document.getElementById('slideViewerBackdrop');
+  const prevBtn = document.getElementById('slidePrev');
+  const nextBtn = document.getElementById('slideNext');
+  const counter = document.getElementById('slideCounter');
+  if (!viewer) return;
+
+  let current = 1;
+
+  function slideSrc(n) {
+    return `slides/slide-${String(n).padStart(2,'0')}.webp`;
+  }
+
+  function openViewer(n) {
+    current = n;
+    viewerImg.src = slideSrc(current);
+    counter.textContent = `${current} / ${TOTAL}`;
+    viewer.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    preload(current + 1);
+  }
+
+  function closeViewer() {
+    viewer.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { viewerImg.src = ''; }, 300);
+  }
+
+  function goTo(n) {
+    current = ((n - 1 + TOTAL) % TOTAL) + 1;
+    viewerImg.style.opacity = '0';
+    setTimeout(() => {
+      viewerImg.src = slideSrc(current);
+      viewerImg.onload = () => { viewerImg.style.opacity = '1'; };
+      counter.textContent = `${current} / ${TOTAL}`;
+      preload(current + 1);
+      preload(current - 1);
+    }, 120);
+  }
+
+  function preload(n) {
+    if (n < 1 || n > TOTAL) return;
+    const img = new Image();
+    img.src = slideSrc(n);
+  }
+
+  document.querySelectorAll('.slide-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => openViewer(parseInt(thumb.dataset.slide)));
+  });
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+  viewerClose.addEventListener('click', closeViewer);
+  viewerBackdrop.addEventListener('click', closeViewer);
+
+  document.addEventListener('keydown', e => {
+    if (!viewer.classList.contains('open')) return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goTo(current + 1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   goTo(current - 1);
+    if (e.key === 'Escape') closeViewer();
+  });
+
+  // Touch/swipe support
+  let touchStartX = 0;
+  viewer.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  viewer.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) goTo(dx < 0 ? current + 1 : current - 1);
+  });
+})();
+
 /* ─── FAVICON FROM LOGO ─────────────────────────────────────────────────── */
 (function generateFavicon() {
   const img = new Image();
