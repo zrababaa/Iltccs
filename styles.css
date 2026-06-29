@@ -1592,10 +1592,11 @@ input, select, textarea { font-family: inherit; }
   margin-top: 2px;
 }
 .invitation__logo-img {
-  width: 52px;
-  height: 52px;
+  height: 44px;
+  width: auto;
+  max-width: 140px;
   object-fit: contain;
-  border-radius: 6px;
+  display: block;
 }
 .invitation__logo-sep {
   width: 1px;
