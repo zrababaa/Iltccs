@@ -316,6 +316,27 @@ document.head.appendChild(style);
   });
 })();
 
+/* ─── PRODUCT FILTER ─────────────────────────────────────────────────────── */
+(function initProductFilter() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card[data-category]');
+  if (!filterBtns.length) return;
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('filter-btn--active'));
+      btn.classList.add('filter-btn--active');
+      const filter = btn.dataset.filter;
+      productCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.classList.remove('product-card--hidden');
+        } else {
+          card.classList.add('product-card--hidden');
+        }
+      });
+    });
+  });
+})();
+
 /* ─── FAVICON FROM LOGO ─────────────────────────────────────────────────── */
 (function generateFavicon() {
   const img = new Image();
